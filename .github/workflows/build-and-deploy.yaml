@@ -97,13 +97,13 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{U7q8Q~fVHpGrX9vx7tfFnIIDMuDbTjDV3v.aUc9T}}
 
       - name: Deploy bicep
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az group create -g ${{ secrets.RESOURCE_GROUP }} -l canadacentral
+            az group create -g ${{ secrets.RESOURCE_GROUP }} -l uksouth
             az deployment group create -g ${{ secrets.RESOURCE_GROUP }} -f ./deploy/main.bicep \
              -p \
                 minReplicas=0 \
