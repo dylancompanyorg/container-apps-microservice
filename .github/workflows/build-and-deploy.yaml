@@ -108,7 +108,7 @@ jobs:
              -p \
                 minReplicas=0 \
                 nodeImage='${{ needs.package-services.outputs.containerImage-node }}' \
-                nodePort=3000 \
+                nodePort=443 \
                 pythonImage='${{ needs.package-services.outputs.containerImage-python }}' \
                 pythonPort=5000 \
                 goImage='${{ needs.package-services.outputs.containerImage-go }}' \
