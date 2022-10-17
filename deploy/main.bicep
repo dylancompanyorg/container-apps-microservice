@@ -4,7 +4,7 @@ param environmentName string = 'env-${uniqueString(resourceGroup().id)}'
 param minReplicas int = 0
 
 param nodeImage string 
-param nodePort int = 3000
+param nodePort int = 443
 var nodeServiceAppName = 'node-app'
 
 param pythonImage string
